@@ -17,7 +17,7 @@ plot(projectdata$DateTime,projectdata$Global_active_power,type="l",ylab="Global 
 plot(projectdata$DateTime, projectdata$Sub_metering_1, type="l", col="black",ylab="Energy sub metering",xlab="")
 lines(projectdata$DateTime, projectdata$Sub_metering_2, col="red")
 lines(projectdata$DateTime, projectdata$Sub_metering_3, col="blue")
-legend(x="topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=c(1,1,1), col=c("black", "red", "blue"))
+legend(x="topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=c(1,1,1), col=c("black", "red", "blue"),bty="n")
 plot(projectdata$DateTime,projectdata$Voltage,ylab="Voltage",xlab="datetime",type="l",lwd=1)
 plot(y=projectdata$Global_reactive_power,x=projectdata$DateTime,xlab="datetime",ylab="Global_reactive_power",type="l")
 dev.off()
