@@ -1,4 +1,4 @@
-strfileUrl<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+fileUrl<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 download.file(fileUrl,"C:\\Users\\vava\\Desktop\\Statistics\\Exploratory Analysis\\data1.zip")
 unzip("C:\\Users\\vava\\Desktop\\Statistics\\Exploratory Analysis\\data1.zip")
 electrition<-read.table("data1\\household_power_consumption.txt",sep=";",header=TRUE)
